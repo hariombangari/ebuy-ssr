@@ -9,8 +9,8 @@ const remotes = (isServer) => {
   const CATALOG_URL_LOCAL = "http://localhost:3001";
   const CHECKOUT_URL_LOCAL = "http://localhost:3002";
 
-  const CATALOG_URL_PROD = "http://52.224.20.191/";
-  const CHECKOUT_URL_PROD = "http://52.224.20.191/";
+  const CATALOG_URL_PROD = "http://localhost:3001";
+  const CHECKOUT_URL_PROD = "http://20.237.127.178";
 
   const CATALOG_REMOTE_HOST =
     ENV === "PROD" ? CATALOG_URL_PROD : CATALOG_URL_LOCAL;

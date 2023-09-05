@@ -8,7 +8,7 @@ const remotes = (isServer) => {
 
   const CHECKOUT_URL_LOCAL = "http://localhost:3002";
 
-  const CHECKOUT_URL_PROD = "http://52.224.20.191/";
+  const CHECKOUT_URL_PROD = "http://20.237.127.178";
 
   const CHECKOUT_REMOTE_HOST =
     ENV === "PROD" ? CHECKOUT_URL_PROD : CHECKOUT_URL_LOCAL;
