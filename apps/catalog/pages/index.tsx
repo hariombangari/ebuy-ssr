@@ -1,5 +1,5 @@
 import { Card } from "semantic-ui-react";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/product-card";
 import { PRODUCT_LIST_MOCKS } from "../mocks/product-list-mocks";
 
 export function ProductList(): JSX.Element {
