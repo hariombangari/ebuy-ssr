@@ -4,8 +4,17 @@ const NextFederationPlugin = require("@module-federation/nextjs-mf");
 // loading remotes on demand, not ideal for SSR
 const remotes = (isServer) => {
   const location = isServer ? "ssr" : "chunks";
+  const ENV = process.env.ENV;
+
+  const CATALOG_URL_LOCAL = "http://localhost:3001";
+
+  const CATALOG_URL_PROD = "http://52.224.20.191/";
+
+  const CATALOG_REMOTE_HOST =
+    ENV === "PROD" ? CATALOG_URL_PROD : CATALOG_URL_LOCAL;
+
   return {
-    catalog: `catalog@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
+    catalog: `catalog@${CATALOG_REMOTE_HOST}/_next/static/${location}/remoteEntry.js`,
   };
 };
 module.exports = {
