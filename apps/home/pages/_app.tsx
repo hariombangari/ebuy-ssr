@@ -7,7 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to ebuy app!</title>
+        <title>Welcome to ebuy!</title>
       </Head>
       <main>
         <Header />
