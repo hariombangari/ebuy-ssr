@@ -56,7 +56,7 @@ jobs:
       - name: Set K8s Context
         uses: Azure/aks-set-context@v3
         with:
-          cluster-name: ebuy
+          cluster-name: ebuy-ssr
           resource-group: ebuy-rg
 
       - name: Deploy to K8s
